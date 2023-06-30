@@ -19,13 +19,17 @@ body::before{
     z-index: -1;
 }
 header{
-    background-image: linear-gradient( to right, yellow, #FFCC00);
+    background-color: rgba(27, 27, 27, 0.096);
     min-width: 300px;
     height: 50px;
     padding-top: 0px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.253);
+}
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
 }
 div#titulo{
     display: flex;
@@ -35,10 +39,11 @@ div#titulo{
     text-align: center;
     background-color: none;
     
-    margin-top: 5px;
+    margin-top: 10px;
     width: 100%;
 }
 #título{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20pt;
 }
 #botao{
@@ -60,9 +65,13 @@ div#titulo{
     margin-top: 0%;
     border: none;
     position: absolute;
-    background-color: yellow;
+    background-color: none;
     width: 50px;
     height: 50px;
+    border-bottom-left-radius: 10px;
+}
+#botao:hover{
+    cursor: pointer;
 }
 #botao:active{
     transform: scale(0.7, 1);
@@ -74,17 +83,17 @@ ul{
 }
 a{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: black;
+    color: rgb(17, 17, 17);
     text-decoration: none;
 }
 ul:hover{
     cursor: pointer;
-    transition: 0.5s;
+    transition: 0.9s;
 }
 a:hover{
-    color: rgb(83, 83, 83);
+    color: rgb(255, 255, 255);
     text-decoration: underline;
-    transition: 0.2s;
+    transition: 0.9s;
 }
 /* conteúdo de abertura da página*/
 .conteúdo{
@@ -148,4 +157,53 @@ p:hover{
 }
 .linkjhc:hover{
     color: rgb(204, 204, 204);
+}
+footer{
+    height: 250px;
+    text-align: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.795);
+    margin-top: 200px;
+    box-shadow: 0px 0px 7px  rgba(0, 0, 0, 0.411);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.footerinfo{
+    background-color: none;
+    width: 350px;
+    height: 200px;
+    display: inline-block;
+}
+.footerinfo > p{
+    text-align: center;
+    text-align: justify;
+    color: rgb(153, 153, 153);
+}
+.footerinfo > h1{
+    color: rgb(221, 221, 221);
+}
+#quemsoueu{
+    padding: 20px;
+}
+#meuscontatos{
+    padding: 15px
+}
+.imagemcontatos{
+    margin-top: 100px;
+}
+@media screen and ( max-width: 790px) {
+    footer{
+        height: 500px;
+    }
+}
+@media screen and ( max-width: 580px) {
+    .textop{
+        display: none;
+    }
+    #título{
+        display: none;
+    }
+}
+@media screen and ( max-width: 390px){
+    
 }

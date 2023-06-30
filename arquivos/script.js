@@ -7,6 +7,7 @@ var links = document.getElementsByClassName('link')
     links[1].style.display = 'none'
     links[2].style.display = 'none'
 function revelarAba(){
+    abaRevel.style.backgroundColor = 'rgba(128, 128, 128, 0.9)'
     abaRevel.style.height = '600px'
     abaRevel.style.width = '200px'
     abaRevel.style.borderBottomRightRadius = '10px'
@@ -17,6 +18,7 @@ function revelarAba(){
     links[2].style.display = 'block'
 }
 function sumirAba(){
+    abaRevel.style.backgroundColor = 'transparent'
     abaRevel.style.height = '50px'
     abaRevel.style.width = '50px'
     abaRevel.style.boxShadow = 'none'
