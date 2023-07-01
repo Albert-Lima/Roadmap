@@ -15,7 +15,7 @@ body::before{
     left: 0;
     background-image: url('pexels-olia-danilevich-4974914.jpg');
     background-size: cover;
-    filter: brightness(0.5) contrast(1.1); /* Valor entre 0 e 1, onde 0 é totalmente escuro e 1 é o brilho original */
+    filter: brightness(0.4) contrast(1.1); /* Valor entre 0 e 1, onde 0 é totalmente escuro e 1 é o brilho original */
     z-index: -1;
 }
 header{
@@ -59,7 +59,7 @@ div#titulo{
 }
 #imagemmenu{
     width: 17px;
-    height: 12px;
+    height: 12px;   
 }
 #abaRev{
     margin-top: 0%;
@@ -186,24 +186,51 @@ footer{
     padding: 20px;
 }
 #meuscontatos{
-    padding: 15px
+    height: 180px;
+    padding: 15px;
+    margin-top: -5px;
 }
 .imagemcontatos{
     margin-top: 100px;
 }
-@media screen and ( max-width: 790px) {
+@media screen and ( max-width: 773px){
     footer{
         height: 500px;
     }
 }
-@media screen and ( max-width: 580px) {
-    .textop{
+@media screen and ( max-width: 465px){
+    .imgamostra{
         display: none;
+    }
+    .textop{
+        margin:auto;
+    }
+    .textoh1{
+        margin-left: 7px;
+    }
+}
+@media screen and ( max-width: 400px){
+    #quemsoueu{
+        display: none;
+    }
+    .footerinfo > p {
+        display: none;
+    }
+    .footerinfo > h1{
+        font-size: 15px;
+    }
+    footer{
+        height: 220px;
+    }
+    #meusconstatos{
+        margin-top: 60px;
     }
     #título{
         display: none;
     }
 }
-@media screen and ( max-width: 390px){
-    
+@media screen and ( max-width: 379px){
+    footer{
+        width: 100vw;
+    }
 }
