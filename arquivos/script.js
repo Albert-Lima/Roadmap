@@ -7,11 +7,11 @@ var links = document.getElementsByClassName('link')
     links[1].style.display = 'none'
     links[2].style.display = 'none'
 function revelarAba(){
-    abaRevel.style.backgroundColor = 'rgba(128, 128, 128, 0.9)'
+    abaRevel.style.backgroundColor = 'rgba(128, 128, 128, 0.999)'
     abaRevel.style.height = '600px'
     abaRevel.style.width = '200px'
     abaRevel.style.borderBottomRightRadius = '10px'
-    abaRevel.style.boxShadow = '0px 0px 5px 3px rgba(0, 0, 0, 0.253)'
+    abaRevel.style.boxShadow = '0px 0px 5px 3px rgba(0, 0, 0, 0.200)'
     abaRevel.style.transitionDuration = '0.2s'
     links[0].style.display = 'block'
     links[1].style.display = 'block'
