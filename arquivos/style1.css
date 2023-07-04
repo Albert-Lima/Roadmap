@@ -3,7 +3,7 @@
     margin: 0%;
 }
 :root{
-    --background-image: url('pexels-olia-danilevich-4974914.jpg');
+    --background-image: url('arquivos/background road map 2.jpg')
 }
 /*cabeçallho*/
 body::before{
@@ -83,7 +83,7 @@ ul{
 }
 a{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: rgb(17, 17, 17);
+    color: rgb(41, 41, 41);
     text-decoration: none;
 }
 ul:hover{
@@ -92,7 +92,7 @@ ul:hover{
 }
 a:hover{
     color: rgb(255, 255, 255);
-    text-decoration: underline;
+    text-decoration: none;
     transition: 0.9s;
 }
 /* conteúdo de abertura da página*/
@@ -217,7 +217,7 @@ footer{
         margin-left: 7px;
     }
 }
-@media screen and ( max-width: 400px){
+@media screen and ( max-width: 600px){
     #quemsoueu{
         display: none;
     }
@@ -236,9 +236,24 @@ footer{
     #título{
         display: none;
     }
+    .links{
+        font-size: 20pt;
+        border-radius: 0px;
+        border: solid 0px rgb(41, 41, 41);
+        padding: 5px;
+        box-shadow: 0px 2px 1px 0px rgba(41, 41, 41, 0.712);
+    }
+    .links:hover{
+        text-decoration: none;
+        cursor:pointer;
+        box-shadow: 0px 2px 1px 0px rgba(41, 41, 41, 0.712);
+    }
 }
 @media screen and ( max-width: 379px){
     footer{
         width: 100vw;
+    }
+    body{
+        background-image: url('arquivos/background road map 2.jpg');
     }
 }
